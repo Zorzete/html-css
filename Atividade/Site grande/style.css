@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'idroid'; 
+    src: url(fontes/idroid.otf)
+    format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+header{
+    text-align: center;
+    background-color: #3DDC84;
+    padding:30px;
+    margin:-8px;
+    background-image:linear-gradient(to bottom, #3DDC84, #063D1E);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px 10px #153d2786;
+    font-size:20px;
+}
+
+header>h1,h4{
+    color:rgb(255, 255, 255);
+    text-shadow:1px 1px 2px rgba(100, 100, 100, 0.527);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:400px;
+    font-style:normal;
+}
+
+header>nav{
+    text-align:left;
+    margin:-20px;
+}
+
+a{
+    text-decoration:none;
+    color:#83E1AD;
+}
+
+a:hover{
+    background-color:#33915C;
+    border-radius: 5px;
+}
+
+a:active{
+    color:#83E1AD;
+    background-color:#133b250c;
+}
+
+section{
+    width:90em;
+    margin:auto;
+    text-align:left;
+    background-color:white;
+    padding:10px;
+    box-shadow: 1px 1px 2px 3px rgba(75, 75, 75, 0.493);
+}
+
+main{
+    background-color:#C5EBD6;
+
+    text-indent:20px;
+    margin-top:30px;
+    margin-left:-10px;
+    margin-right:-10px;  
+}
+
+h2, h3{
+    font-family: 'idroid', 'sans-serif';
+    
+}
+
+h2{
+    text-align:center;
+}
+
+h3{
+    text-align:left;
+    background-image:linear-gradient(to right, #83E1AD, #ffffff )
+}
+
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+
+picture{
+    display:block;
+    margin:0 auto;
+
+}
+
+ul{
+    list-style-type: '🗸';
+    columns:2;
+    list-style-position: inside;
+    
+}
+
+aside{
+    background-color:#3DDC84;
+    border-radius:8px 8px 8px 8px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+}
+
+aside>h3{
+    background-image:linear-gradient(#33915C,#33915C);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#33915C;
+    border-radius:8px 8px 0px 0px;
+    margin-top:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+footer{
+    text-align:center;
+    background-color:#063D1E;
+    color:white;
+}
+
+#video{
+    background-color:#33915C;
+    display:block;
+    width:40%;
+    margin:auto;
+    
+}
+
+article{
+    font-family: Arial, Helvetica, sans-serif;
+}

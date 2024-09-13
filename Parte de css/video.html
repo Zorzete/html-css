@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra Atividade</title>
+</head>
+<body>
+    <h1>Lista de algumas tags em HTML</h1>
+    <h3>Aqui algumas tags em html</h3>
+        <ul>
+            <li><abbr title ="&lt;p&gt;">paragrafo</abbr></li>
+            <li><abbr title = "&lt;strong&gt;">negrito</abbr></li>
+            <li>italico</li>
+            
+        </ul>
+
+        <h2> Videos </h2>
+            <p> Formatos </p>
+            <!--Tem 4 suportados - MP4/M4V - Mais comum, WebM - Qaulidade baixa e OGV
+            
+
+            Tomar cuidado na hora da qualidade do vídeo, pode fazer o preço de hospedagem do site subir muito - Não fazer isso em site próprio ou dominio local-->
+
+            <video width="500" poster = "AlgumaImagem.png" controls> <!--Poster é para colocar alguma imagem de "Thumbnail" para o video, controls pra colocar o controlador padrão-->
+                    <source src = "Algum video.mp4" type = "video/mp4">
+                    <source src = "Algum video.m4v" type = "video/mp4">
+                    <source src = "Algum video.webm" type = "video/WebM">
+                    <source src = "Algum video.ogv" type = "video/ogg">
+                    <p> Não tem suporte de video</p>
+            </video>
+                <!--Consome muita banda nas melhores hipoteses, pesando bastante no bolso do cliente. Com a tag video-->
+
+                <h2> Para não consumir banda própria, tem como puxar videos do youtube ou, preferencialmente, vimeo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=TKNfbhsGVSHqKRtF" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!--Opção de compartilhar tem a opção de incorporar, assim, não consome banda própria do cliente-->
+
+</body>
+</html>

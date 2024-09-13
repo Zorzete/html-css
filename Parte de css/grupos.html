@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color:lightblue;
+            margin:auto; 
+            text-align:center;
+            width:500px;
+            height:300px;
+        }
+
+        header{
+            background-color:white;
+            padding:10px;
+            margin:10px;
+        }
+
+        main{
+            background-color:white;
+            padding:10px;
+            margin:10px;
+            border-radius:10px; /*10px 20px 30px 40px - mesmo esquema dos padding*/
+        }
+
+        #assuntos{
+            background-color:white;
+            padding:10px;
+        }
+
+        #assuntos > aside{
+            color:blue;
+            display:inline;
+        }
+
+        nav > a{
+            padding:10px;
+            text-decoration:none;
+            
+        }
+       
+        nav{
+            background-color:rgba(144, 238, 144, 0.521);
+            box-shadow: 1px 1px 1px rgba(81, 136, 81, 0.267); /*shorthand - deslocamento horizontal, vertical, espalhamento e cor. Tem como adicionar mais um px de blur.*/
+        }
+
+        div#bola{
+            height:100px;
+            width:100px;
+            
+            background-color:white;
+            border-radius: 70%;
+            margin:auto;
+        }
+
+        /*algo{
+            border:12px solid transparent; precisa disso para funcionar colocar imagem
+            
+            border-image-source:url('arquivo');
+            border-image-slice:20;
+            border-image-repeat:repeat;
+
+            ou shorthand
+
+            border-image: url('arquivo') 20 repeat;
+        }
+
+        /*...*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salve</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos velit pariatur deleniti dolorem officiis neque, optio dolor tenetur omnis qui architecto sequi saepe quasi molestiae ratione distinctio enim officia. Lorem ipsum dolor<aside>sit amet consectetur adipisicing elit</aside>. Accusamus non iure illum nostrum animi at vitae beatae magnam eaque ea! Quis, perspiciatis facilis. Illum nemo velit sapiente praesentium, in illo!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <p>Eu q escrevi <aside>também</aside>.</P>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Eu q fiz</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

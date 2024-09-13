@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrade</title>
+    <style>
+        *{ /* Asteriscos são configurações globais na css*/
+                height: 100%;
+        } /*Sem o height, ficaria uma coisa bem estranha */
+
+        body{ /*Falando que da direita para a esquerda, vai criar um degrade*/
+        background-image: linear-gradient(to top, rgb(0, 0, 0),rgb(177, 177, 253)); 
+        background-attachment: fixed; /* Faz o degrade não ficar acompanhando o scroll */
+        } /*Tem como usar 45deg (que é básicamente com grau)
+            ou ate radial-gradient com circle (Meio feio, mas tem como fazer coisas legais) */
+            
+    </style>
+</head>
+<body>
+    <h1>Sarve</h1>
+</body>
+</html>

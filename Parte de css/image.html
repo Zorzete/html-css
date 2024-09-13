@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html </title>
+</head>
+<body>
+    <h1> tamano de imagens</h1>
+        <p>Muda o tamano do navegar pro ce ve ai</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="Img/img-pequena.png" type="image/png">
+            <source media = "(max-width: 1050px)" srcset = "Img/img-medio.png" type = "image/png"> <!--source media é para limitar a troca de tamanho de algo, nesse caso, a imagem
+            Importante se, o tamanho for menor, o source tem que ficar em cima do outro. Sempre bom colocar 50px a mais para não ter problema de ajustar e continuar o scroll-->
+            <img src = "Img/img-grande.png" alt ="imagem"> <!--Essa aqui sendo a base das outras-->
+        </picture> <!--Picture significa que vai ter uma imagem nessa área aqui-->
+
+        <h1> Reproduzir áudio hipotético</h1>
+            <audio src = "midia/audioAleatorio.mp3" controls autoplay></audio>
+            <!--Alguns navegadores não tem compatibilidade com o mp3, com isso, o autoplay não funciona, então, existem estas outras opções:
+            MP#, WAV, OGG-->
+            <audio preload ="metadata" loop autoplay> <!--Auto, metadata e none. Básicamente se refere a como o arquivo vai funcionar, em auto, o site vai baixar o arquivo de audio antes de iniciar o site,
+                o metadata vai so baixar o nome do arquivo e algumas informações e o none só vai carregar as coisas se o usuário der play -->
+                <source src= "asofandsf.mpeg"> <!--Aqui também tem hierarquia, as de cima vão tentar ser carregadas primeiro. mpeg para mp3-->
+                <source src= "asofandsf.wav">
+                <source src= "asofandsf.ogg">
+            </audio>
+</body>
+</html>
